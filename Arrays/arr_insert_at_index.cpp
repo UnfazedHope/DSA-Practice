@@ -9,6 +9,8 @@ class Solution{
     {
         //Your code here
         
+        // Don't use i++ approach -> it leads to overwriting values like inserting new element 90 in original array 1 2 3 4 5 at idx 2, then o/p will be 1 2 90 3 3 3
+      
         for(int i=sizeOfArray-1;i>=index;i--){
             arr[i] = arr[i-1];
         }
